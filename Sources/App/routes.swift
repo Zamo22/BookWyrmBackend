@@ -11,10 +11,21 @@ public func routes(_ router: Router) throws {
     router.get("hello") { req in
         return "Hello, world!"
     }
+    
 
     // Example of configuring a controller
     let todoController = TodoController()
     router.get("todos", use: todoController.index)
+    router.get("popular" , use: todoController.getBooks)
     router.post("todos", use: todoController.create)
     router.delete("todos", Todo.parameter, use: todoController.delete)
+}
+
+
+struct PopularBook: Codable, Content {
+    var isbns: String
+}
+
+struct PopularBooks: Codable, Content {
+    var books: [PopularBook]
 }
