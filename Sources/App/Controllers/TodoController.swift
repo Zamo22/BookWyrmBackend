@@ -50,8 +50,6 @@ final class TodoController {
             let isbns = try Isbns(isbnArray: isbnList)
             return isbns
         }
-
-
     }
     
 }
