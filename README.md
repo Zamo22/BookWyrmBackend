@@ -1,3 +1,12 @@
+# BookWyrm-Backend
+
+### Purpose
+* This small application was created to serve as a backend service api for the mobile application [BookWyrm](https://github.com/Zamo22/BookWyrm)
+* Fetches data on most popular current books, parses it and returns filtered data to the mobile application to slightly improve loading times
+
+### Tecnologies Used:
+This service was written in Swift using Vapor. See template info below:
+
 <p align="center">
     <img src="https://user-images.githubusercontent.com/1342803/36623515-7293b4ec-18d3-11e8-85ab-4e2f8fb38fbd.png" width="320" alt="API Template">
     <br>
@@ -18,3 +27,4 @@
         <img src="http://img.shields.io/badge/swift-4.1-brightgreen.svg" alt="Swift 4.1">
     </a>
 </p>
+
